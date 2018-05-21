@@ -40,3 +40,104 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+/* mobil */
+
+.doporucujeme{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hlavni-recept{
+    display: flex;
+    flex-direction: column;
+    background-position: center; 
+    min-height: 200px;
+    padding: 10px;
+    background-image: url('images/burger.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    color: #FFF;
+    
+  }
+  
+  .recept-meta{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+  }
+  
+  .recept-nazev{
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFF;
+  }
+  
+  .hlavni-recept .recept-nazev{
+    font-size: 28px;
+    
+  }
+  
+  .sloupec{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recept{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 90px;
+    padding: 10px;
+    background-position: center;
+  }
+  
+  .recept2{
+    background-image: url('images/sushi.jpg')
+  }
+  
+  .recept3{
+    background-image: url('images/rajcata.jpg')
+  }
+  
+  .recept4{
+    background-image: url('images/kure.jpg')
+  }
+  
+  .recept5{
+    background-image: url('images/grilovani.jpg')
+  }
+  
+  @media(min-width: 480px){
+    
+    .doporucujeme{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .hlavni-recept{
+      min-height: 250px;
+      width: 100%;
+    }
+    
+    .recept{
+      min-height: 150px;
+    }
+    
+    .sloupec{
+      width: 50%;
+    }
+  }
+  
+  @media(min-width: 860px){
+    
+    .doporucujeme{
+      flex-wrap: nowrap;
+    }
+    
+    .hlavni-recept{
+      min-width: 33%;
+    }
+  }
+
